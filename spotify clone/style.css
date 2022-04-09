@@ -112,3 +112,26 @@ nav ul li{
 #songNames{
     display: none;
 }
+@media(max-width:500px){
+    .box1{
+        background:url(images.jpg)
+    }
+    .songList{
+        width: 90%;
+        height: 30rem;
+        background:url(images.jpg);
+        display: flex;
+        flex-direction: column;
+    }
+    .songs{
+        background-color:rgba(255, 255, 255, 0.459);
+        width: 90%;
+        height: 2.5rem;
+        display: flex;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    #gif{
+        z-index: -1;
+    }
+}
