@@ -1,0 +1,144 @@
+@font-face {
+    font-family: rosemary;
+    src: url(Rosemary.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: rosemary;
+}
+nav ul{
+    display:flex;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 0.5rem;
+    margin: 0.5rem ;
+}
+.logo{
+    width: 2rem;
+}
+.box1{
+    height:28rem;
+    background: url(bg1.jpg);
+    background-size: cover;
+}
+.songList{
+    width: 30%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.songs .play{
+    width: 2rem;
+    height: 2rem;
+    margin: 5px 10px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    left:18rem;
+}
+.songs{
+    width: 90%;
+    height: 2.5rem;
+    display: flex;
+    margin: 5px;
+    border-radius: 10px;
+}
+.bottom{
+    background-color: black;
+    height:6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#range{
+    width: 80%;
+    height: 0.1rem;
+    cursor: pointer;
+}
+.box3{
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.box3 img{
+    filter: invert();
+    cursor:pointer;
+}
+#pre{
+    margin-left: -30px;
+}
+#next{
+    margin-right: -30px;
+}
+.cover{
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+.songName{
+    width: 200px;
+    margin: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 12px;
+}
+.songInfo{
+    display: flex;
+    position: absolute;
+    left: 1.5vw;
+
+}
+.songInfo img{
+    width: 105px;
+    height: 59.25px;
+}
+.songInfo span{
+    color: white;
+    margin-top: 1.5rem;
+}
+#gif{
+    display: none;
+}
+#songNames{
+    display: none;
+}
+@media(max-width:500px){
+    .box1{
+        background:url(logo.jpg);
+        background-size:100vw 100vw;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .songList{
+        width: 90%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .songs{
+        width: 90%;
+        height: 2.5rem;
+        display: flex;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    #gif{
+        z-index: -1;
+    }
+    #songNames{
+        visibility: hidden;
+        display: none;
+    }
+}
