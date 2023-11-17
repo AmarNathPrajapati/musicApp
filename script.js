@@ -17,10 +17,12 @@ masterPlay.addEventListener('click',()=>{
         songNames.style.display = "none";
     }
 })
+//updating sickbar with audio.
 audio.addEventListener('timeupdate',()=>{
     let percentage = parseInt((audio.currentTime/audio.duration)*100);
     sickBar.value = percentage;
 })
+//handling change in sickBar.
 sickBar.addEventListener('change',()=>{
     let progress = sickBar.value;
     audio.currentTime =progress*audio.duration/100;
@@ -39,7 +41,7 @@ let songs = [
     {songName:"Make me move-Culture Code",filePath:"songs/music8.mp3",coverPath:"covers/8.jpg"},
     {songName:"Unstoppable-Sia",filePath:"songs/music9.mp3",coverPath:"covers/9.jpg"}
 ]
-
+//Creating song lists
 let songItems = document.getElementsByClassName('songs');
 Array.from(songItems).forEach((element,i)=>{
     element.getElementsByClassName('songName')[0].innerText = songs[i].songName;
@@ -50,6 +52,7 @@ const makeAllPlays = () =>{
         element.src="circle-play-solid.svg";
 })
 }
+//Adding functionality of each play buttons
 let index = 1;
 Array.from(document.getElementsByClassName('play')).forEach((element)=>{
     element.addEventListener('click',(e)=>{

@@ -22,14 +22,12 @@ nav ul li{
 .logo{
     width: 2rem;
 }
-.box1{
-    height:28rem;
+body{
     background: url(bg1.jpg);
     background-size: cover;
 }
 .songList{
     width: 30%;
-    height: 30rem;
     display: flex;
     flex-direction: column;
 }
@@ -50,6 +48,9 @@ nav ul li{
     border-radius: 10px;
 }
 .bottom{
+    position: absolute;
+    bottom: 2px;
+    width: 100vw;
     background-color: black;
     height:6.4rem;
     display: flex;
@@ -101,8 +102,8 @@ nav ul li{
 
 }
 .songInfo img{
-    width: 105px;
-    height: 59.25px;
+    width: 10vw;
+    height: 30px;
 }
 .songInfo span{
     color: white;
